@@ -1,4 +1,4 @@
-<div class="productView">
+<div class="productView" data-event-type="product" data-entity-id="{{product.id}}" data-product-name="{{product.title}}" data-product-category="" data-product-brand="{{product.brand.name}}">
     {{#each product.reviews.messages}}
         {{#if error}}
             {{> components/common/alert-error error}}
