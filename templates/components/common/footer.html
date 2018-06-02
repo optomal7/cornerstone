@@ -6,7 +6,15 @@
             </div>
         {{/each}}
     </div>
-</div>
+
+    <div class="banners" data-banner-location="bottom">
+        {{#each banners.bottom_detail_params}}
+            <div class="banner" data-event-type="promo-clicked" data-entity-id="{{this.id}}" data-promo-name="{{this.banner-name}}" data-banner-position="{{this.location}}" data-banner-content="{{this.content}}">
+               {{{this.content}}}
+            </div>
+        {{/each}}
+    </div>
+
 {{/if}}
 <footer class="footer" role="contentinfo">
     <div class="container">
