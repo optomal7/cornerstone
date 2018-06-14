@@ -2,14 +2,9 @@
     <div class="banners" data-banner-location="top">
         {{#each (limit banners.top_metadata 1)}}
             <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-promo-name="{{this.banner-name}}" data-banner-position="{{this.location}}" data-banner-name="{{this.banner-name}}">
-                {{{this.content}}}
-            </div>
-        {{/each}}
-    </div>
-    <div class="banners" data-banner-location="top">
-        {{#each (limit banners.top_detail_params 1)}}
-            <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-promo-name="{{this.banner-name}}" data-banner-position="{{this.location}}" data-banner-name="{{this.banner-name}}">
-                {{{this.content}}}
+                <div data-event-type="promotion-click">
+                    {{{this.content}}}
+                </div>
             </div>
         {{/each}}
     </div>
