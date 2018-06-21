@@ -30,7 +30,8 @@
       "one_page_check_out",
       "product_videos",
       "google_amp",
-      "customized_checkout"
+      "customized_checkout",
+      "enhanced_ecommerce"
     ]
   },
   "css_compiler": "scss",
